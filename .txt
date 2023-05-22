@@ -1,0 +1,28 @@
+
+Inserting ta test data into mongoDB
+    Step 01: Create Interface or Type
+    step 02: Create Schema
+    Step 03: Create Model
+    Step 04: MongoDB Query on model
+
+Folder Structure for moduler way
+    1. create a folder app
+    2. create a folder app/modules
+    3. create a folder app/modules/features --- like user
+    4. create a route file app/modules/features/route --- like app/modules/user/user.route.ts
+    5. create a controller file app/modules/features/controller --- like app/modules/user/user.controller.ts
+    6. create a services file app/modules/features/services --- like app/modules/user/user.services.ts
+    7. create a interface file app/modules/features/interface --- like app/modules/user/user.interface.ts
+    8. create a schema and model file app/modules/features/model --- like app/modules/user/user.model.ts
+
+    Server --- App --- Route --- Controller --- Service --- Interface --- Model
+
+Instance Methods
+    class --- instance + method --- instance-methods
+    Example:
+        const user = new User(payload); // User --- Class, instance --- user 
+        await user.save(); // user.save() --- built in instance methods
+
+Statics 
+    class --- method --- Statics
+    Example: User.name();
